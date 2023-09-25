@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="632.0" prefWidth="621.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.repository.ItemRepository">
+   <children>
+      <AnchorPane layoutX="-16.0" prefHeight="632.0" prefWidth="637.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="21.0" layoutY="38.0" prefHeight="41.0" prefWidth="173.0" text="Item ">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="118.0" prefHeight="3.0" prefWidth="117.0" text="Item Id">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtItem_id" layoutX="169.0" layoutY="123.0" prefHeight="14.0" prefWidth="338.0" />
+            <Label layoutX="37.0" layoutY="200.0" prefHeight="20.0" prefWidth="173.0" text="Item Name">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtQty" layoutX="169.0" layoutY="277.0" prefHeight="14.0" prefWidth="338.0" />
+            <Label layoutX="36.0" layoutY="282.0" prefHeight="20.0" prefWidth="173.0" text="QtyOnHand">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtItem_name" layoutX="169.0" layoutY="205.0" prefHeight="14.0" prefWidth="338.0" />
+            <Label layoutX="37.0" layoutY="368.0" prefHeight="20.0" prefWidth="173.0" text="UnitPrice">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPrice" layoutX="169.0" layoutY="363.0" prefHeight="14.0" prefWidth="338.0" />
+            <Button layoutX="169.0" layoutY="501.0" mnemonicParsing="false" onAction="#SaveOnAction" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #F7C04A;" text="Save" textFill="#001402" />
+            <Button layoutX="320.0" layoutY="501.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #F7C04A;" text="Update" textFill="#001402" />
+            <Button layoutX="459.0" layoutY="501.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #F7C04A;" text="Delete" textFill="#001402" />
+            <Button fx:id="root" layoutX="40.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#navigateToHome" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #F7C04A;" text="Back" textFill="#001402" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

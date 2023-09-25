@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="396.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.repository.MainRepository">
+   <children>
+      <AnchorPane prefHeight="396.0" prefWidth="573.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="178.0" layoutY="56.0" prefHeight="40.0" prefWidth="217.0" text="HOME">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="root" fitHeight="105.0" fitWidth="104.0" layoutX="88.0" layoutY="153.0" onMouseClicked="#navigate" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/Employeeicon.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="root2" fitHeight="87.0" fitWidth="85.0" layoutX="216.0" layoutY="162.0" onMouseClicked="#navigate2" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/searchicon2.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="root3" fitHeight="85.0" fitWidth="85.0" layoutX="337.0" layoutY="163.0" onMouseClicked="#navigate3" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/cart2icon.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

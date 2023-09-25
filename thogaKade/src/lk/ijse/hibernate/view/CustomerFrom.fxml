@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="632.0" prefWidth="622.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.hibernate.repository.CustomerRepository">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="7.0" prefHeight="632.0" prefWidth="630.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="21.0" layoutY="38.0" prefHeight="41.0" prefWidth="203.0" text="Customer">
+               <font>
+                  <Font name="Times New Roman Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="118.0" prefHeight="3.0" prefWidth="117.0" text="Customer Id">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCust_Id" layoutX="177.0" layoutY="113.0" prefHeight="14.0" prefWidth="338.0" />
+            <Label layoutX="37.0" layoutY="200.0" prefHeight="20.0" prefWidth="173.0" text="Customer Name">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtcust_address" layoutX="177.0" layoutY="277.0" prefHeight="14.0" prefWidth="338.0" />
+            <Label layoutX="36.0" layoutY="282.0" prefHeight="20.0" prefWidth="173.0" text="Customer Address">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCust_name" layoutX="177.0" layoutY="185.0" prefHeight="14.0" prefWidth="338.0" />
+            <Label layoutX="36.0" layoutY="366.0" prefHeight="20.0" prefWidth="173.0" text="Customer Contact">
+               <font>
+                  <Font name="Times New Roman" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtcontact" layoutX="187.0" layoutY="371.0" prefHeight="14.0" prefWidth="338.0" />
+            <Button layoutX="169.0" layoutY="501.0" mnemonicParsing="false" onAction="#saveOnAction" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #F7C04A;" text="Save" textFill="#001402" />
+            <Button layoutX="320.0" layoutY="501.0" mnemonicParsing="false" onAction="#updateOnAction" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #F7C04A;" text="Update" textFill="#001402" />
+            <Button layoutX="459.0" layoutY="501.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="41.0" prefWidth="111.0" style="-fx-background-color: #F7C04A;" text="Delete" textFill="#001402" />
+            <Button fx:id="root" layoutX="51.0" layoutY="501.0" mnemonicParsing="false" onMouseClicked="#navigateToHome" prefHeight="41.0" prefWidth="90.0" style="-fx-background-color: #F7C04A;" text="Back" textFill="#001402" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
